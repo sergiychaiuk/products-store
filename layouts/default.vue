@@ -1,5 +1,8 @@
 <template>
-  <v-app dark>
+  <v-app
+    dark
+    :style="{ backgroundColor: $vuetify.theme.dark ? $vuetify.theme.themes.dark.bg : $vuetify.theme.themes.light.bg }"
+  >
     <v-main>
       <Nuxt />
     </v-main>
