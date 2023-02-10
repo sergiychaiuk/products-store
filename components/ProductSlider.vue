@@ -2,6 +2,8 @@
   <v-slide-group>
     <v-slide-item v-for="(p, i) in products" :key="`hotProduct-${i}`">
       <v-card
+        nuxt
+        :to="`/products/${p.id}`"
         color="surface"
         width="300"
         class="el ma-2 mb-5 mr-5"
