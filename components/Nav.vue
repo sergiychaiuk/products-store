@@ -34,9 +34,19 @@
         <v-icon size="20">mdi-cart-outline</v-icon>
       </v-btn>
       <v-divider vertical class="mx-md-5 mx-2" />
-      <v-btn icon>
+      <v-btn @click="toggleTheme" icon>
         <v-icon size="20">mdi-brightness-7</v-icon>
       </v-btn>
     </v-app-bar>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleTheme() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+    },
+  },
+};
+</script>
