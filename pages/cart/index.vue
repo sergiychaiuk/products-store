@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Nav />
     <br />
     <div class="text-center" v-if="$store.state.cart.cart.length === 0">
       <p>No items just yet. Keep shopping.</p>
@@ -66,8 +65,5 @@
         </template>
       </v-row>
     </v-container>
-    <br /><br />
-    <Footer />
-    <ScrollTop />
   </div>
 </template>
